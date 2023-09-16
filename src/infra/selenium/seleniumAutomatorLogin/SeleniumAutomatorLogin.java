@@ -3,6 +3,7 @@ package infra.selenium.seleniumAutomatorLogin;
 import app.usesCases.AutomatorLogin;
 import domain.User;
 import infra.selenium.Selenium;
+import infra.selenium.SingletonSelenium;
 
 
 public class SeleniumAutomatorLogin implements AutomatorLogin {
@@ -12,7 +13,7 @@ public class SeleniumAutomatorLogin implements AutomatorLogin {
 
     public SeleniumAutomatorLogin(User user) {
         this.user = user;
-        this.sel = new Selenium();
+        this.sel = new SingletonSelenium().getInstance();
 
     } 
     

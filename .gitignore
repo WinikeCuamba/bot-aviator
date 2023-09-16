@@ -4,8 +4,5 @@ lib/
 # Selenium driver
 driver/chromedriver
 
-# vscode config
-.vscode/
-
 # binary
 bin/

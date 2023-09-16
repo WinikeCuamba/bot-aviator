@@ -14,7 +14,7 @@ public class GameRoundControlerFactory {
 
     public static GameRoundControler createInstance() {
         automatorPlay = new SeleniumAutomatorPlay();
-        float[] list = new float[] {2, 1};
+        float[] list = new float[] {1, 0};
         gameRound = new GameRound(2, list, (short) 1);
         gameRoundControler = new GameRoundControler(gameRound, automatorPlay);
         return gameRoundControler;

@@ -24,12 +24,22 @@ public class Selenium {
         input.sendKeys(keys);
     }
 
+    public void sendKeysForInputWithClassName(String keys ,String className) {
+        WebElement input = this.driver.findElement(By.className(className));
+        input.sendKeys(keys);
+    }
+
     public void clickWithXpath(String xpath) {
         WebElement element = this.driver.findElement(By.xpath(xpath));
         element.click();
     }
     public void clickWithId(String id) {
         WebElement element = this.driver.findElement(By.id(id));
+        element.click();
+    }
+
+    public void clickWithClassName(String id) {
+        WebElement element = this.driver.findElement(By.className(id));
         element.click();
     }
 
