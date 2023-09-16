@@ -1,8 +1,8 @@
 # Libs 
-lib/
+lib/**
 
 # Selenium driver
-driver/chromedriver
+driver/**
 
 # binary
-bin/
+bin/**
